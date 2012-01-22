@@ -450,7 +450,7 @@ table {
  * Copyright (C) 2012 Rafael Canovas
 **/
 
-html, body, header, h1, span, body div, input, a {
+html, body, body div, a, img, span {
 	background:transparent;
 	border:0;
 	font-size:100%;
