@@ -487,6 +487,7 @@ body {
 	padding-right:32px;
 	position:fixed;
 	width:20%;
+	z-index:1000;
 }
 
 .loading {
