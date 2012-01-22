@@ -465,15 +465,6 @@ body {
 	background-attachment:fixed;
 }
 
-header {
-	padding:10px;
-	position:fixed;
-	text-align:center;
-	top:0;
-	width:100%;
-	z-index:1000;
-}
-
 #search {
 	background-color:#EEEEEE;
 	-webkit-border-bottom-left-radius:10px;
@@ -488,6 +479,7 @@ header {
 			box-shadow:inset 0px 0px 5px #444444;
 	color:#555555;
 	height:32px;
+	margin:10px auto;
 	padding-left:10px;
 	padding-right:32px;
 	width:230px;
