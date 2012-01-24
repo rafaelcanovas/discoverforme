@@ -23,7 +23,7 @@
 <body>
 	<header>
 		<input id="search" type="search" value="" placeholder="Don't touch this." autofocus required>
-	</head>
+	</header>
 	<div id="author">
 		<a href="mailto://rafaelcanovas@shortmail.me">
 			<img src="/images/rafaelcanovas.png" alt="&copy; 2012 Rafael Canovas" title="&copy; 2012 Rafael Canovas">
