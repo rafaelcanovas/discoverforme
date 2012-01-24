@@ -469,7 +469,7 @@ body {
 
 header {
 	background:inherit;
-	border-bottom:1px solid #999999;
+	border-bottom:1px solid #5B5B5B;
 	height:48px;
 	line-height:48px;
 	position:fixed;
@@ -497,6 +497,10 @@ header {
 	padding-left:10px;
 	padding-right:32px;
 	width:250px;
+}
+
+#search:focus {
+	outline:none;
 }
 
 .loading {

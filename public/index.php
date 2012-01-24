@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
 	<link rel="shortcut icon" href="/favicon.ico">	
-	<link rel="stylesheet" href="/css/style.css?v=13">
+	<link rel="stylesheet" href="/css/style.css?v=14">
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
