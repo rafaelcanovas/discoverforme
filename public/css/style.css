@@ -464,12 +464,19 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 
 body {
 	background:#424242 url('/images/darkfade.jpg') no-repeat fixed top center;
+	padding-top:48px;
 }
 
 header {
+	background:inherit;
+	border-bottom:1px solid #999999;
 	height:48px;
 	line-height:48px;
+	position:fixed;
 	text-align:center;
+	top:0;
+	width:100%;
+	z-index:1000;
 }
 
 #search {
