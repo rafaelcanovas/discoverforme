@@ -445,12 +445,9 @@ table {
     border-spacing: 0;
 }
 
-/*
- * discoverfor.me Stylesheet
- * Copyright (C) 2012 Rafael Canovas
-**/
+/* http://html5reset.org */ 
 
-html, body, body div, a, img, span {
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
 	background:transparent;
 	border:0;
 	font-size:100%;
@@ -460,12 +457,18 @@ html, body, body div, a, img, span {
 	vertical-align:baseline;
 }
 
+/*
+ * Main Stylesheet
+ * Copyright (C) 2012 Rafael Canovas
+**/
+
 body {
-	background:url('/images/darkfade.jpg') no-repeat top center;
-	background-attachment:fixed;
+	background:#424242 url('/images/darkfade.jpg') no-repeat fixed top center;
+	padding-top:48px;
 }
 
 header {
+	background:#424242 url('/images/darkfade.jpg') no-repeat scroll top center;
 	height:48px;
 	line-height:48px;
 	position:fixed;
