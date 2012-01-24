@@ -18,7 +18,6 @@ dojo.ready(function(){
 				autocorrect: 1,
 				format: 'json'
 			},
-			timeout: 3000,
 			load: function(data) 
 			{
 				var similarArtists = data['similarartists'];
