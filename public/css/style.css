@@ -519,13 +519,12 @@ html, body, body div, header, a, img {
 **/
 
 body {
-	background:#424242 url('/images/darkfade.jpg') no-repeat fixed top center;
+	background:#151515 url('/images/black-noise-low.jpg') no-repeat fixed top center;
 	padding-top:48px;
 }
 
 header {
 	background:inherit;
-	border-bottom:1px solid #5B5B5B;
 	height:48px;
 	line-height:48px;
 	position:fixed;
@@ -552,7 +551,7 @@ header {
 	height:32px;
 	padding-left:10px;
 	padding-right:32px;
-	width:250px;
+	width:292px;
 }
 
 #search:focus {
@@ -560,9 +559,7 @@ header {
 }
 
 .loading {
-	background-image:url('/images/ajax-loader.gif');
-	background-position:right center;
-	background-repeat:no-repeat;
+	background:url('/images/ajax-loader.gif') no-repeat right center;
 }
 
 .thumbnail {
@@ -579,7 +576,7 @@ header {
 	background-color:transparent;
 	background-color:rgba(0, 0, 0, 0.8);
 				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);
-				  zoom:1;
+				zoom:1;
 	color:#FFFFFF;
 	display:none;
 	font:normal 90% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -603,5 +600,5 @@ header {
 	bottom:5px;
 	position:fixed;
 	right:10px;
-	z-index:1000;
+	z-index:-1;
 }
