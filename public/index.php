@@ -12,13 +12,13 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
 	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="image_src" href="http://discoverforme.orchestra.io/images/dfm.png">
-	<link rel="stylesheet" href="/css/style.css?v=15">
+	<link rel="image_src" href="http://discoverforme.orchestra.io/images/dfm.png?2">
+	<link rel="stylesheet" href="/css/style.css?15">
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<script src="/js/dojo.js"></script>
-	<script src="/js/main.js?v=9"></script>
+	<script src="/js/main.js?9"></script>
 </head>
 <?php flush(); ?>
 <body>
