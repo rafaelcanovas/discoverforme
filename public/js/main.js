@@ -65,8 +65,8 @@ dojo.ready(function(){
 					var thumbnail = dojo.create('div', { class:'thumbnail' });
 					dojo.fadeOut(thumbnail, 0);
 					
-					dojo.connect(thumbnailImg, 'onload', function(e) {
-						dojo.setStyle(thumbnail, { backgroundImage: "url('"+e.target.src+"')" });
+					thumbnailImg.onLoad = function() {
+						dojo.setStyle(thumbnail, { backgroundImage: "url('"+thumbnailImg.src+"')" });
 						dojo.fadeIn(thumbnail, 500);
 					})
 					
