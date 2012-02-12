@@ -68,7 +68,7 @@ dojo.ready(function(){
 					thumbnailImg.onLoad = function() {
 						dojo.setStyle(thumbnail, { backgroundImage: "url('"+thumbnailImg.src+"')" });
 						dojo.fadeIn(thumbnail, 500);
-					})
+					}
 					
 					var info = dojo.create('a', {
 						class: 'info',
