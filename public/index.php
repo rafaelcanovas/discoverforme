@@ -11,7 +11,8 @@
 	
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
-	<link rel="shortcut icon" href="/favicon.ico">	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="image_src" href="http://discoverforme.orchestra.io/images/dfm.png">
 	<link rel="stylesheet" href="/css/style.css?v=15">
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
