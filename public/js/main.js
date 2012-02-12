@@ -58,14 +58,15 @@ dojo.ready(function(){
 				for(var i in similarArtists['artist']) {
 					var similar = similarArtists['artist'][i];
 					
+					// Preload the thumbnail background image
 					var thumbnailImg = new Image();
 					thumbnailImg.src = similar.image[3]['#text'];
 					
 					var thumbnail = dojo.create('div', { class:'thumbnail' });
 					dojo.setStyle(thumbnail, {
 						backgroundImage: 'url(\''+thumbnailImg.src+'\')',
-						opacity: 0
 					});
+					dojo.fadeOut(thumbnail, 0);
 					
 					var info = dojo.create('a', {
 						class: 'info',
