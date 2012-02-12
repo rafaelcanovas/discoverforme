@@ -52,23 +52,16 @@ dojo.ready(function(){
 				
 				var similarArtists = data.similarartists;
 				
-				// Show the autocorrected input value
+				// Show the autocorrected artist name
 				searchInput.value = similarArtists['@attr'].artist;
 			
 				for(var i in similarArtists['artist']) {
 					var similar = similarArtists['artist'][i];
-					
-					// Preload the thumbnail background image
-					var thumbnailImg = new Image();
-					thumbnailImg.src = similar.image[3]['#text'];
-					
-					var thumbnail = dojo.create('div', { class:'thumbnail' });
-					dojo.fadeOut(thumbnail, 0);
-					
-					thumbnailImg.onLoad = function() {
-						dojo.setStyle(thumbnail, { backgroundImage: "url('"+thumbnailImg.src+"')" });
-						dojo.fadeIn(thumbnail, 500);
-					}
+										
+					var thumbnail = dojo.create('div', {
+						class: 'thumbnail',
+						style: "background-image: url('"+similar.image[3]['#text']+"')"
+					});
 					
 					var info = dojo.create('a', {
 						class: 'info',
