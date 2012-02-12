@@ -77,8 +77,9 @@ dojo.ready(function(){
 				// End loading	
 				toggleLoading();
 			},
-			error: function()
+			error: function(e)
 			{
+				console.log(e);
 				cancelRequest('Oops, something went wrong!');
 			}
 		});
