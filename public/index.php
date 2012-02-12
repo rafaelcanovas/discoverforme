@@ -17,7 +17,7 @@
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<script src="/js/dojo.js"></script>
-	<script src="/js/main.js?v=3"></script>
+	<script src="/js/main.js?v=4"></script>
 </head>
 <?php flush(); ?>
 <body>

@@ -76,10 +76,7 @@ dojo.ready(function(){
 					
 					dojo.place(info, thumbnail);
 					dojo.place(thumbnail, dojo.body());
-					
-					thumbnailImg.onload = function() {
-						dojo.fadeIn(thumbnail, 500);
-					}
+					dojo.fadeIn(thumbnail, 500);
 				}	
 				
 				// End loading	
