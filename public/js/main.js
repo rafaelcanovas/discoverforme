@@ -63,10 +63,12 @@ dojo.ready(function(){
 					thumbnailImg.src = similar.image[3]['#text'];
 					
 					var thumbnail = dojo.create('div', { class:'thumbnail' });
-					dojo.setStyle(thumbnail, {
-						backgroundImage: 'url(\''+thumbnailImg.src+'\')',
-					});
 					dojo.fadeOut(thumbnail, 0);
+					
+					dojo.connect(thumbnailImg, 'onload', function(e) {
+						dojo.setStyle(thumbnail, { backgroundImage: "url('"+e.target.src+"')" });
+						dojo.fadeIn(thumbnail, 500);
+					})
 					
 					var info = dojo.create('a', {
 						class: 'info',
@@ -77,7 +79,6 @@ dojo.ready(function(){
 					
 					dojo.place(info, thumbnail);
 					dojo.place(thumbnail, dojo.body());
-					dojo.fadeIn(thumbnail, 500);
 				}	
 				
 				// End loading	
