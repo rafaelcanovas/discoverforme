@@ -514,7 +514,7 @@ html, body, body div, header, a, img {
 }
 
 /*
- * Main Stylesheet
+ * discoverfor.me Stylesheet
  * Copyright (C) 2012 Rafael Canovas
 **/
 
@@ -533,6 +533,10 @@ header {
 	width:100%;
 	z-index:1000;
 }
+
+/*==============================================================================
+ * Inputs
+ * ===========================================================================*/
 
 #search {
 	background-color:#EEEEEE;
@@ -561,6 +565,10 @@ header {
 .loading {
 	background:url('/images/ajax-loader.gif') no-repeat right center;
 }
+
+/*==============================================================================
+ * Thumbnails
+ * ===========================================================================*/
 
 .thumbnail {
 	background-position:center center;
@@ -595,6 +603,10 @@ header {
 .thumbnail:focus .info {
 	display:block;
 }
+
+/*==============================================================================
+ * Footer
+ * ===========================================================================*/
 
 #author {
 	bottom:5px;

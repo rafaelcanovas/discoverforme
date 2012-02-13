@@ -23,7 +23,7 @@
 <?php flush(); ?>
 <body>
 	<header>
-		<input id="search" type="search" value="" placeholder="C'mon, try an artist!" autofocus required>
+		<input id="search" class="" type="search" value="" placeholder="C'mon, try an artist!" autofocus>
 	</header>
 	<div id="author">
 		<a href="mailto:rafaelcanovas@shortmail.me">
