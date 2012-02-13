@@ -18,8 +18,7 @@ dojo.ready(function(){
 		toggleLoading();
 	}	
 	
-	dojo.connect(searchInput, 'onchange', null,
-	function(e) {
+	dojo.connect(searchInput, 'onchange', null, function(e) {
 		// Begin loading
 		toggleLoading();
 		
