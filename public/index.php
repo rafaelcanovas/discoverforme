@@ -28,6 +28,7 @@
 			<input id="search-limit" class="search-field" type="number" value="100" required>
 			<select id="search-type" class="search-field" disabled>
 			</select>
+			<input type="submit" style="display:none">
 		</form>
 	</header>
 	<div id="author">
