@@ -45,7 +45,7 @@ function main()
 				if(data.error) {
 					var errorMessage = 'Fatal error, call the ambulance!';
 					
-					if(data.error == 6) {
+					if(data.error == 6 || !data.similarartists) {
 						// An unknown artist was inputted
 						errorMessage = 'Who?';
 					}
