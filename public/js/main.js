@@ -11,14 +11,15 @@ function main()
 	
 	function cancelRequest(msg)
 	{
+		// Cancel loading
+		toggleLoading();
+		
 		if(msg) {
 			searchTerm.value = msg;
 		}
 		
 		searchTerm.focus();
 		searchTerm.select();
-		// Cancel loading
-		toggleLoading();
 	}	
 	
 	dojo.connect(searchForm, 'onsubmit', null, function(e) {
