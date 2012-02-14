@@ -1,5 +1,6 @@
-dojo.ready(function(){
-	var searchInput = dojo.byId('search');
+function main()
+{
+	var searchInput = dojo.byId('search-term');
 	
 	function toggleLoading()
 	{
@@ -83,4 +84,6 @@ dojo.ready(function(){
 			}
 		});
 	});
-});
+}
+
+dojo.ready(main);
