@@ -1,25 +1,26 @@
 function main()
 {
-	var searchInput = dojo.byId('search-term');
+	var searchForm = dojo.byId('search-form');
+	var searchTerm = dojo.byId('search-term');
 	
 	function toggleLoading()
 	{
-		dojo.toggleClass(searchInput, 'loading');
+		dojo.toggleClass(searchTerm, 'loading');
 	}
 	
 	function cancelRequest(msg)
 	{
 		if(msg) {
-			searchInput.value = msg;
+			searchTerm.value = msg;
 		}
 		
-		searchInput.focus();
-		searchInput.select();
+		searchTerm.focus();
+		searchTerm.select();
 		// Cancel loading
 		toggleLoading();
 	}	
 	
-	dojo.connect(searchInput, 'onchange', null, function(e) {
+	dojo.connect(searchForm, 'onsubmit', null, function(e) {
 		// Begin loading
 		toggleLoading();
 		
@@ -53,7 +54,7 @@ function main()
 				var similarArtists = data.similarartists;
 				
 				// Show the autocorrected artist name
-				searchInput.value = similarArtists['@attr'].artist;
+				searchTerm.value = similarArtists['@attr'].artist;
 			
 				for(var i in similarArtists['artist']) {
 					var similar = similarArtists['artist'][i];
