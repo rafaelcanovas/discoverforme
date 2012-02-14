@@ -21,6 +21,9 @@ function main()
 	}	
 	
 	dojo.connect(searchForm, 'onsubmit', null, function(e) {
+		// Prevent page from reloading
+		e.preventDefault();
+	
 		// Begin loading
 		toggleLoading();
 		
