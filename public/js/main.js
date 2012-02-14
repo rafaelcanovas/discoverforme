@@ -32,7 +32,7 @@ function main()
 			handleAs: 'json',
 			content: {
 				method: 'artist.getsimilar',
-				artist: e.target.value,
+				artist: searchTerm.value,
 				api_key: 'eb6dc9b732732664bb179c33cb94ab36',
 				autocorrect: true,
 				format: 'json'
