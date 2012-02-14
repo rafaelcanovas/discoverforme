@@ -2,6 +2,7 @@ function main()
 {
 	var searchForm = dojo.byId('search-form');
 	var searchTerm = dojo.byId('search-term');
+	var searchLimit = dojo.byId('search-limit');
 	
 	function toggleLoading()
 	{
@@ -32,6 +33,7 @@ function main()
 			handleAs: 'json',
 			content: {
 				method: 'artist.getsimilar',
+				limit: searchLimit.value,
 				artist: searchTerm.value,
 				api_key: 'eb6dc9b732732664bb179c33cb94ab36',
 				autocorrect: true,
