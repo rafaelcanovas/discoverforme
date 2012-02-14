@@ -558,7 +558,7 @@ header {
 }
 
 .loading {
-	background:url('/images/ajax-loader.gif') no-repeat right center;
+	background:inherit url('/images/ajax-loader.gif') no-repeat right center;
 }
 
 #search-limit {
