@@ -539,11 +539,17 @@ header {
  * ===========================================================================*/
 
 .search-field {
-	background-color:#EEEEEE;
+	background-color:#E6E6E6;
 	border:0;
+	-webkit-border-radius:32px 32px 8px 32px; 
+	   -moz-border-radius:32px 32px 8px 32px; 
+	   		border-radius:32px 32px 8px 32px; 
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 	color:#555555;
 	display:inline-block;
 	height:32px;
+	padding-left:10px;
+	text-shadow:1px 1px #FFFFFF;
 	vertical-align:middle;
 }
 
@@ -552,13 +558,12 @@ header {
 }
 
 #search-term {
-	padding-left:10px;
 	padding-right:32px;
 	width:292px;
 }
 
 .loading {
-	background:#EEEEEE url('/images/ajax-loader.gif') no-repeat right center;
+	background:#E6E6E6 url('/images/ajax-loader.gif') no-repeat right center;
 }
 
 #search-limit {
