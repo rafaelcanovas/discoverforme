@@ -544,6 +544,7 @@ header {
 	color:#555555;
 	display:inline-block;
 	height:32px;
+	vertical-align:middle;
 }
 
 .search-field:focus {
@@ -558,6 +559,14 @@ header {
 
 .loading {
 	background:url('/images/ajax-loader.gif') no-repeat right center;
+}
+
+#search-limit {
+	width:50px;
+}
+
+#search-type {
+	width:50px;	
 }
 
 /*==============================================================================
