@@ -503,7 +503,7 @@ table {
 
 /* http://html5reset.org */ 
 
-html, body, body div, header, a, img {
+html, body, body div, header, a, img, form {
 	background:transparent;
 	border:0;
 	font-size:100%;
@@ -535,31 +535,25 @@ header {
 }
 
 /*==============================================================================
- * Inputs
+ * Form and Inputs
  * ===========================================================================*/
 
-#search {
+.search-field {
 	background-color:#EEEEEE;
 	border:0;
-	-webkit-border-bottom-left-radius:10px;
-	   -moz-border-bottom-left-radius:10px;
-			border-bottom-left-radius:10px;
-	-webkit-border-top-right-radius:10px;
-	   -moz-border-top-right-radius:10px;
-			border-top-right-radius:10px;
-  	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
-	-webkit-box-shadow:inset 0px 0px 5px #444444;
-	   -moz-box-shadow:inset 0px 0px 5px #444444;
-			box-shadow:inset 0px 0px 5px #444444;
 	color:#555555;
+	display:inline-block;
 	height:32px;
+}
+
+.search-field:focus {
+	outline:none;
+}
+
+#search-term {
 	padding-left:10px;
 	padding-right:32px;
 	width:292px;
-}
-
-#search:focus {
-	outline:none;
 }
 
 .loading {

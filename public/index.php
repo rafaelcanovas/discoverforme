@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
 	<title>discoverfor.me ― Amplify your repertoire</title>
-	<meta name="author" content="Rafael Canovas">
+	<meta name="author" content="humans.txt">
 	<meta name="description" content="Find out new influences, amplify your repertoire.">
 	<meta name="keywords" content="music, discover, new, sound, audio, similar, albums, tracks, artists, repertoire">
 	
@@ -23,7 +23,12 @@
 <?php flush(); ?>
 <body>
 	<header>
-		<input id="search" class="" type="search" value="" placeholder="C'mon, try an artist!" autofocus>
+		<form id="search-form">
+			<input id="search-term" class="search-field" type="search" value="" placeholder="C'mon, try an artist!" autofocus required>
+			<input id="search-limit" class="search-field" type="number" value="100" required>
+			<select id="search-type" class="search-field" disabled>
+			</select>
+		</form>
 	</header>
 	<div id="author">
 		<a href="mailto:rafaelcanovas@shortmail.me">
