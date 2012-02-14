@@ -26,7 +26,7 @@
 		<form id="search-form">
 			<input id="search-term" class="search-field" type="search" value="" placeholder="C'mon, try an artist!" autofocus required>
 			<input id="search-limit" class="search-field" type="number" value="100" required>
-			<input class="search-field" type="submit" value="▸">
+			<input id="search-submit" class="search-field" type="submit" value="▸">
 		</form>
 	</header>
 	<div id="author">
