@@ -25,6 +25,16 @@ function main()
 	dojo.connect(searchForm, 'onsubmit', null, function(e) {
 		// Prevent page from reloading
 		e.preventDefault();
+		
+		if(searchTerm.value.length <= 0) {
+			searchTerm.focus();
+			searchTerm.select();
+			return false;
+		} else if(searchLimit.value <= 0) {
+			searchLimit.focus();
+			searchLimit.select();
+			return false;
+		}
 	
 		// Begin loading
 		toggleLoading();
@@ -45,7 +55,7 @@ function main()
 				if(data.error) {
 					var errorMessage = 'Fatal error, call the ambulance!';
 					
-					if(data.error == 6 || !data.similarartists) {
+					if(data.error == 6 || !data.similarartists['@attr']) {
 						// An unknown artist was inputted
 						errorMessage = 'Who?';
 					}
@@ -62,8 +72,13 @@ function main()
 				// Show the autocorrected artist name
 				searchTerm.value = similarArtists['@attr'].artist;
 			
-				for(var i in similarArtists['artist']) {
-					var similar = similarArtists['artist'][i];
+				var similarArray = similarArtists.artist;
+				if(!dojo.isArray(similarArray)) {
+					similarArray = new Array(similarArray);
+				}
+				
+				for(var i in similarArray) {
+					var similar = similarArray[i];
 										
 					var thumbnail = dojo.create('div', {
 						class: 'thumbnail',
