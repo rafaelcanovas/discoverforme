@@ -1,11 +1,12 @@
 /* TEAM */
 Standalone Man: Rafael Canovass
-Site: rafaelcanovas.com <rafaelcanovas [at] shortmail.me>
+Contact: rafaelcanovas.com <rafaelcanovas [at] shortmail.me>
 Twitter: @rafael_canovas
 Location: São Paulo, Brazil
 
 /* THANKS */
 Name: Gustavo Aguiar
+Contact: gustavoaguiar [at] shortmail.me
 
 /* SITE */
 Last update: 2012/02/13
