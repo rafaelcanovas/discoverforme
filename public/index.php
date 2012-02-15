@@ -30,7 +30,7 @@
 	</header>
 	<div id="help"></div>
 	<div id="author">
-		<a href="http://rafaelcanovas.com/">
+		<a href="http://rafaelcanovas.com/" target="_blank">
 			<img src="/images/rafaelcanovas.png" alt="&copy; 2012 Rafael Canovas" title="&copy; 2012 Rafael Canovas">
 		</a>
 	</div>
