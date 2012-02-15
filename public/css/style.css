@@ -535,7 +535,7 @@ header {
 }
 
 #help {
-	background:url('/images/help.png') no-repeat center center;
+	background:url('/images/help.png?2') no-repeat center center;
 	height:173px;
 	margin:0 auto;
 	position:relative;
