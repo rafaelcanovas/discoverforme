@@ -29,6 +29,7 @@
 			<input id="search-submit" class="search-field" type="submit" value="▸">
 		</form>
 	</header>
+	<div id="help"></div>
 	<div id="author">
 		<a href="mailto:rafaelcanovas@shortmail.me">
 			<img src="/images/rafaelcanovas.png" alt="&copy; 2012 Rafael Canovas" title="&copy; 2012 Rafael Canovas">

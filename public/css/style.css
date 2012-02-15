@@ -534,6 +534,16 @@ header {
 	z-index:1000;
 }
 
+#help {
+	background:url('/images/help.png') no-repeat center center;
+	height:173px;
+	margin:0 auto;
+	position:relative;
+	top:0;
+	width:838px;
+	z-index:-1;
+}
+
 /*==============================================================================
  * Form and Inputs
  * ===========================================================================*/

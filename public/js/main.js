@@ -68,6 +68,12 @@ function main()
 					cancelRequest('Who?');
 					return false;
 				}
+				
+				// Hide the help container if it's present
+				var helpContainer = dojo.byId('help');
+				if(helpContainer) {
+					dojo.fadeOut({ node: helpContainer }).play();
+				}
 
 				// Clear the screen if other artist was queried previously
 				dojo.query('.thumbnail').forEach(dojo.destroy);
