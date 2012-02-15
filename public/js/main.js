@@ -72,7 +72,12 @@ function main()
 				// Hide the help container if it's present
 				var helpContainer = dojo.byId('help');
 				if(helpContainer) {
-					dojo.fadeOut({ node: helpContainer }).play();
+					dojo.animateProperty({
+						node: helpContainer,
+						properties: {
+							height: 0
+						}
+					}).play();
 				}
 
 				// Clear the screen if other artist was queried previously
