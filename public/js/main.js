@@ -74,6 +74,7 @@ function main()
 				if(helpContainer) {
 					dojo.animateProperty({
 						node: helpContainer,
+						duration: 800,
 						properties: {
 							height: 0
 						}
