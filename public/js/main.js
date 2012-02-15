@@ -55,13 +55,13 @@ function main()
 				if(data.error) {
 					var errorMessage = 'Fatal error, call the ambulance!';
 					
-					if(data.error == 6 || !data.similarartists['@attr']) {
+					if(data.error == 6 || data.similarartists['@attr'] === undefined) {
 						// An unknown artist was inputted
 						errorMessage = 'Who?';
 					}
 					
 					cancelRequest(errorMessage);
-					return;
+					return false;
 				}
 
 				// Clear the screen if other artist was queried previously
