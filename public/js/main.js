@@ -55,12 +55,17 @@ function main()
 				if(data.error) {
 					var errorMessage = 'Fatal error, call the ambulance!';
 					
-					if(data.error == 6 || data.similarartists['@attr'] === undefined) {
+					if(data.error == 6) {
 						// An unknown artist was inputted
 						errorMessage = 'Who?';
 					}
 					
 					cancelRequest(errorMessage);
+					return false;
+				}
+				
+				if(!data.similarartists['@attr']) {
+					cancelRequest('Who?');
 					return false;
 				}
 
