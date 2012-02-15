@@ -2,7 +2,6 @@ function main()
 {
 	var searchForm = dojo.byId('search-form');
 	var searchTerm = dojo.byId('search-term');
-	var searchLimit = dojo.byId('search-limit');
 	
 	function toggleLoading()
 	{
@@ -30,10 +29,6 @@ function main()
 			searchTerm.focus();
 			searchTerm.select();
 			return false;
-		} else if(searchLimit.value <= 0) {
-			searchLimit.focus();
-			searchLimit.select();
-			return false;
 		}
 	
 		// Begin loading
@@ -44,7 +39,7 @@ function main()
 			handleAs: 'json',
 			content: {
 				method: 'artist.getsimilar',
-				limit: searchLimit.value,
+				limit: 200,
 				artist: searchTerm.value,
 				api_key: 'eb6dc9b732732664bb179c33cb94ab36',
 				autocorrect: true,
