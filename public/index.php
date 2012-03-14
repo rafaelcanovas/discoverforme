@@ -9,11 +9,12 @@
 	<meta name="description" content="Find out new influences, amplify your repertoire.">
 	<meta name="keywords" content="music, discover, new, sound, audio, similar, albums, tracks, artists, repertoire">
 	
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width">
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="image_src" href="http://discoverforme.orchestra.io/images/dfm.png?2">
 	<link rel="stylesheet" href="/css/style.css?<?php echo time(); ?>">
+	
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
