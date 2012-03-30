@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="/css/style.css?<?php echo time(); ?>">
 	
 	<!--[if lt IE 9]>
-	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<script src="/js/dojo.js"></script>
 	<script src="/js/main.js?<?php echo time(); ?>"></script>
