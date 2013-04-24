@@ -369,7 +369,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 
@@ -501,7 +501,7 @@ table {
     border-spacing: 0;
 }
 
-/* http://html5reset.org */ 
+/* http://html5reset.org */
 
 html, body, body div, header, a, img, form {
 	background:transparent;
@@ -519,7 +519,7 @@ html, body, body div, header, a, img, form {
 **/
 
 body {
-	background:#151515 url('/images/black-noise-low.jpg') no-repeat fixed top center;
+	background:#151515 url('../images/black-noise-low.jpg') no-repeat fixed top center;
 	padding-top:48px;
 }
 
@@ -535,7 +535,7 @@ header {
 }
 
 #help {
-	background:url('/images/help.png?3') no-repeat center center;
+	background:url('../images/help.png?3') no-repeat center center;
 	height:173px;
 	margin:0 auto;
 	position:relative;
@@ -551,9 +551,9 @@ header {
 .search-field {
 	background-color:#E6E6E6;
 	border:0;
-	-webkit-border-radius:32px 32px 8px 32px; 
-	   -moz-border-radius:32px 32px 8px 32px; 
-	   		border-radius:32px 32px 8px 32px; 
+	-webkit-border-radius:32px 32px 8px 32px;
+	   -moz-border-radius:32px 32px 8px 32px;
+	   		border-radius:32px 32px 8px 32px;
 	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 	color:#555555;
 	display:inline-block;
@@ -573,7 +573,7 @@ header {
 }
 
 .loading {
-	background:#E6E6E6 url('/images/ajax-loader.gif') no-repeat right center;
+	background:#E6E6E6 url('../images/ajax-loader.gif') no-repeat right center;
 }
 
 #search-limit {
@@ -581,7 +581,7 @@ header {
 }
 
 #search-type {
-	width:70px;	
+	width:70px;
 }
 
 #search-submit {
