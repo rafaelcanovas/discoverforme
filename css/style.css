@@ -92,19 +92,31 @@ header {
 	background-repeat: no-repeat;
 }
 
-.thumbnail {
+#artists .thumbnail {
 	background-position: center center;
 	background-repeat: no-repeat;
 	float: left;
 	height: 150px;
 	opacity: 0;
-	transform: scale(0);
-	transition: 200ms;
+	-webkit-transform: scale(0);
+	   -moz-transform: scale(0);
+		 -o-transform: scale(0);
+		-ms-transform: scale(0);
+			transform: scale(0);
+	-webkit-transition: 200ms;
+	   -moz-transition: 200ms;
+		 -o-transition: 200ms;
+		-ms-transition: 200ms;
+			transition: 200ms;
 	width: 10%;
 	z-index: 0;
 }
 
-.thumbnail.loaded {
+#artists .thumbnail.loaded {
 	opacity: 1;
-	transform: scale(1);
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+		 -o-transform: scale(1);
+		-ms-transform: scale(1);
+			transform: scale(1);
 }
