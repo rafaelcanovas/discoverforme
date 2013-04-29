@@ -519,7 +519,7 @@ html, body, body div, header, a, img, form {
 **/
 
 body {
-	background:#151515 url('../images/black-noise-low.jpg') no-repeat fixed top center;
+	background:#151515 url('../images/dark_wall.png') repeat;
 	padding-top:48px;
 }
 
