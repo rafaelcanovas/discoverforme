@@ -114,6 +114,42 @@ header {
 	z-index: 0;
 }
 
+@media (max-width: 1400px) {
+	#artists .thumbnail {
+		width: 12.5%;
+	}
+}
+
+@media (max-width: 1024px) {
+	#artists .thumbnail {
+		width: 16.666666667%;
+	}
+}
+
+@media (max-width: 800px) {
+	#artists .thumbnail {
+		width: 20%;
+	}
+}
+
+@media (max-width: 500px) {
+	#artists .thumbnail {
+		width: 33.333333333%;
+	}
+}
+
+@media (max-width: 360px) {
+	#artists .thumbnail {
+		width: 50%;
+	}
+}
+
+@media (max-width: 250px) {
+	#artists .thumbnail {
+		width: 100%;
+	}
+}
+
 #artists .thumbnail:hover {
 	box-shadow: 0 0 0 2px #E9520C inset,
 				0 0 10px black;
