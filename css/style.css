@@ -113,8 +113,15 @@ header {
 }
 
 #artists .thumbnail:hover {
-	box-shadow: 0 0 10px black;
-	transform: scale(1.1) !important;
+	box-shadow: 0 0 0 2px #E9520C,
+				0 0 10px black;
+
+	-webkit-transform: scale(1.1) !important;
+	   -moz-transform: scale(1.1) !important;
+		 -o-transform: scale(1.1) !important;
+		-ms-transform: scale(1.1) !important;
+			transform: scale(1.1) !important;
+
 	z-index: 2;
 }
 
