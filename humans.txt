@@ -1,15 +1,11 @@
 /* TEAM */
-Standalone Man: Rafael Canovass
-Contact: rafaelcanovas.com <rafaelcanovas [at] shortmail.me>
-Twitter: @rafael_canovas
-Location: São Paulo, Brazil
-
-/* THANKS */
-Name: Gustavo Aguiar
-Contact: gustavoaguiar [at] shortmail.me
+	Standalone Coder: Rafael Canovas
+	Contact: rafaelcanovas [at] me.com
+	Twitter: @mstrcnvs
+	Location: São Paulo, Brazil
 
 /* SITE */
-Last update: 2012/02/13
-Standards: HTML5, CSS3
-Components: Dojo Toolkit, HTML5Shim
-Software: Git, Scribes, GIMP
+	Language: English
+	Standards: HTML5, CSS3
+	Components: jQuery, HTML5Shim
+	Software: Git, Sublime Text, GIMP
