@@ -21,7 +21,7 @@ var dfm = (function ($) {
 				.attr('target', '_blank')
 				.appendTo(canvas);
 
-			img.src = a.image[3]['#text'];
+			img.src = a.image[4]['#text'];
 			img.onload = function () {
 				elem.css('background-image', 'url('+img.src+')')
 					.addClass('loaded');
