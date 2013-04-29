@@ -13,10 +13,12 @@ var dfm = (function ($) {
 
 		var artists = data.similarartists.artist;
 		artists.forEach(function (a) {
-			var elem = $('<div>'),
+			var elem = $('<a>'),
 				img = new Image();
 
 			elem.addClass('thumbnail')
+				.attr('href', '//' + a.url)
+				.attr('target', '_blank')
 				.appendTo(canvas);
 
 			img.src = a.image[3]['#text'];
@@ -66,7 +68,6 @@ $(document).ready(function () {
 
 	searchForm.on('submit', function (e) {
 		e.preventDefault();
-		console.log(this);
 
 		hideHelp();
 		toggleLoading();
