@@ -13,29 +13,29 @@ a, img, form {
 }
 
 body {
-	background:#151515 url('../images/dark_wall.png') repeat;
-	padding-top:48px;
+    background: #151515 url('../images/dark_wall.png') repeat;
+    padding-top: 48px;
 }
 
 header {
-	background:inherit;
-	height:48px;
-	line-height:48px;
-	position:fixed;
-	text-align:center;
-	top:0;
-	width:100%;
-	z-index:1000;
+    background: inherit;
+    height: 48px;
+    line-height: 48px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 #help {
-	background:url('../images/help.png?3') no-repeat center center;
-	height:173px;
-	margin:0 auto;
-	position:relative;
-	top:0;
-	width:838px;
-	z-index:-1;
+	background: url('../images/help.png?3') no-repeat center center;
+	height: 173px;
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	width: 838px;
+	z-index: -1;
 }
 
 /*==============================================================================
@@ -43,43 +43,45 @@ header {
  * ===========================================================================*/
 
 .search-field {
-	background-color:#E6E6E6;
-	border:0;
-	-webkit-border-radius:32px 32px 8px 32px;
-	   -moz-border-radius:32px 32px 8px 32px;
-	   		border-radius:32px 32px 8px 32px;
-	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
-	color:#555555;
-	display:inline-block;
-	height:32px;
-	padding-left:10px;
-	text-shadow:1px 1px #FFFFFF;
-	vertical-align:middle;
+	background-color: #E6E6E6;
+	border: 0;
+	-webkit-border-radius: 32px 32px 8px 32px;
+	   -moz-border-radius: 32px 32px 8px 32px;
+	   		border-radius: 32px 32px 8px 32px;
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding;
+            background-clip: padding-box;
+	color: #555555;
+	display: inline-block;
+	height: 32px;
+	padding-left: 10px;
+	text-shadow: 1px 1px #FFFFFF;
+	vertical-align: middle;
 }
 
 .search-field:focus {
-	outline:none;
+	outline: none;
 }
 
 #search-term {
-	padding-right:32px;
-	width:292px;
+	padding-right: 32px;
+	width: 292px;
 }
 
 .loading {
-	background:#E6E6E6 url('../images/ajax-loader.gif') no-repeat right center;
+	background: #E6E6E6 url('../images/ajax-loader.gif') no-repeat right center;
 }
 
 #search-limit {
-	width:70px;
+	width: 70px;
 }
 
 #search-type {
-	width:70px;
+	width: 70px;
 }
 
 #search-submit {
-	width:50px;
+	width: 50px;
 }
 
 /*==============================================================================
@@ -87,37 +89,35 @@ header {
  * ===========================================================================*/
 
 .thumbnail {
-	background-position:center center;
-	background-repeat:no-repeat;
-	display:inline-block;
-	float:left;
-	height:100px;
-	width:10%;
-	z-index:0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	float: left;
+	height: 100px;
+	width: 10%;
+	z-index: 0;
 }
 
 .info {
-	background-color:transparent;
-	background-color:rgba(0, 0, 0, 0.8);
-				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);
-				zoom:1;
-	color:#FFFFFF;
-	display:none;
-	font:normal 90% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	height:90px;
-	left:0;
-	padding-top:10px;
-	position:relative;
-	text-align:center;
-	text-decoration:none;
-	top:0;
-	width:100%;
-	z-index:1;
+	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #FFFFFF;
+	display: none;
+	font: normal 90% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	height: 90px;
+	left: 0;
+	padding-top: 10px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 }
 
 .thumbnail:hover .info,
 .thumbnail:focus .info {
-	display:block;
+	display: block;
 }
 
 /*==============================================================================
@@ -125,8 +125,8 @@ header {
  * ===========================================================================*/
 
 #author {
-	bottom:5px;
-	position:fixed;
-	right:10px;
-	z-index:-1;
+	bottom: 5px;
+	position: fixed;
+	right: 10px;
+	z-index: -1;
 }
