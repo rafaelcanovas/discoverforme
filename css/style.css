@@ -112,6 +112,12 @@ header {
 	z-index: 0;
 }
 
+#artists .thumbnail:hover {
+	box-shadow: 0 0 10px black;
+	transform: scale(1.1) !important;
+	z-index: 2;
+}
+
 #artists .thumbnail.loaded {
 	opacity: 1;
 	-webkit-transform: scale(1);
