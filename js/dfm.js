@@ -77,13 +77,16 @@ $(document).ready(function () {
 		});
 	});
 
-	// if (location.hash) {
-	// 	var hashValue = location.hash.split('#')[1];
+	if (location.hash) {
+		var hashValue = location.hash.split('#')[1];
 
-	// 	hideHelp();
-	// 	searchForm.get(0).term.value = hashValue;
+		searchForm.get(0).artist.value = hashValue;
+		hideHelp();
+		toggleLoading();
 
-	// 	toggleLoading();
-	// 	dfm.query(hashValue, canvas, toggleLoading);
-	// }
+		dfm.querySimilar(hashValue, function (data) {
+			dfm.drawSimilar(data, similarCanvas);
+			toggleLoading();
+		});
+	}
 });
