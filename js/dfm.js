@@ -5,10 +5,10 @@ var dfm = (function ($) {
 		apiKey = 'eb6dc9b732732664bb179c33cb94ab36',
 		limit = 100;
 
-	var draw = function (data, canvas) {
-		if (data.error)
-			return;
+	var drawSimilar = function (data, canvas) {
+		if (data.error) return;
 
+		// Ensure canvas is empty
 		canvas.empty();
 
 		var artists = data.similarartists.artist;
@@ -29,22 +29,22 @@ var dfm = (function ($) {
 		});
 	};
 
-	var query = function (term, canvas, cb) {
+	var querySimilar = function (artist, cb) {
 		$.getJSON(apiURL, {
 			api_key: apiKey,
 			method: 'artist.getsimilar',
 			format: 'json',
-			artist: term,
+			artist: artist,
 			limit: limit,
 			autocorrect: true
 		}, function (data) {
-			draw(data, canvas);
-			cb();
+			cb(data);
 		});
 	};
 
 	return {
-		query: query
+		querySimilar: querySimilar,
+		drawSimilar: drawSimilar
 	};
 
 }(jQuery));
@@ -53,11 +53,11 @@ $(document).ready(function () {
 	'use strict';
 
 	var searchForm = $('#search-form'),
-		help = $('#help'),
-		canvas = $('#artists');
+		similarCanvas = $('#artists'),
+		help = $('#help');
 
 	function toggleLoading() {
-		canvas.toggleClass('loading');
+		similarCanvas.toggleClass('loading');
 	}
 
 	function hideHelp() {
@@ -71,16 +71,19 @@ $(document).ready(function () {
 
 		hideHelp();
 		toggleLoading();
-		dfm.query(this.term.value, canvas, toggleLoading);
+		dfm.querySimilar(this.artist.value, function (data) {
+			dfm.drawSimilar(data, similarCanvas);
+			toggleLoading();
+		});
 	});
 
-	if (location.hash) {
-		var hashValue = location.hash.split('#')[1];
+	// if (location.hash) {
+	// 	var hashValue = location.hash.split('#')[1];
 
-		hideHelp();
-		searchForm.get(0).term.value = hashValue;
+	// 	hideHelp();
+	// 	searchForm.get(0).term.value = hashValue;
 
-		toggleLoading();
-		dfm.query(hashValue, canvas, toggleLoading);
-	}
+	// 	toggleLoading();
+	// 	dfm.query(hashValue, canvas, toggleLoading);
+	// }
 });
