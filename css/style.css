@@ -18,8 +18,9 @@ body {
 }
 
 body {
-    background: url('../images/dark_wall.png') repeat;
-    padding-top: 48px;
+	background: url('../images/dark_wall.png') repeat;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	padding-top: 48px;
 }
 
 header {
@@ -97,9 +98,14 @@ header {
 	-webkit-background-size: cover;
 			background-size: cover;
 	box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+	color: #FFFFFF;
 	float: left;
+	font-size: 1.5em;
 	height: 150px;
 	opacity: 0;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
 	-webkit-transform: scale(0);
 	   -moz-transform: scale(0);
 		 -o-transform: scale(0);
@@ -112,6 +118,24 @@ header {
 			transition: 200ms;
 	width: 10%;
 	z-index: 0;
+}
+
+#artists .thumbnail span {
+	background: rgba(233, 82, 12, 0.8);
+	height: 130px;
+	left: 0;
+	opacity: 0;
+	padding: 10px 5%;
+	position: absolute;
+	top: 0;
+	-webkit-transition: 200ms;
+	   -moz-transition: 200ms;
+		 -o-transition: 200ms;
+		-ms-transition: 200ms;
+			transition: 200ms;
+	visibility: hidden;
+	width: 90%;
+	word-wrap: break-word;
 }
 
 @media (max-width: 1400px) {
@@ -151,7 +175,7 @@ header {
 }
 
 #artists .thumbnail:hover {
-	box-shadow: 0 0 0 2px #E9520C inset,
+	box-shadow: 0 0 0 2px #E9520C,
 				0 0 10px black;
 
 	-webkit-transform: scale(1.2) !important;
@@ -161,6 +185,11 @@ header {
 			transform: scale(1.2) !important;
 
 	z-index: 2;
+}
+
+#artists .thumbnail:hover span {
+	opacity: 1;
+	visibility: visible;
 }
 
 #artists .thumbnail.loaded {

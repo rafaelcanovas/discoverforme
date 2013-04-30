@@ -14,7 +14,11 @@ var dfm = (function ($) {
 		var artists = data.similarartists.artist;
 		artists.forEach(function (a) {
 			var elem = $('<a>'),
+				name = $('<span>'),
 				img = new Image();
+
+			name.text(a.name)
+				.appendTo(elem);
 
 			elem.addClass('thumbnail')
 				.attr('href', '//' + a.url)
