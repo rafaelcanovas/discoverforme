@@ -1,3 +1,13 @@
+var shuffleArray = function (array) {
+	for (var i = array.length - 1; i > 0; i--) {
+		var j = Math.floor(Math.random() * (i + 1));
+		var temp = array[i];
+		array[i] = array[j];
+		array[j] = temp;
+	}
+	return array;
+};
+
 var dfm = (function ($) {
 	'use strict';
 
@@ -12,10 +22,15 @@ var dfm = (function ($) {
 		canvas.empty();
 
 		var artists = data.similarartists.artist;
+
 		artists.forEach(function (a) {
 			var elem = $('<a>'),
 				name = $('<span>'),
-				img = new Image();
+				img = new Image(),
+				imgUrl = a.image[4]['#text'];
+
+			if (!imgUrl)
+				return;
 
 			name.text(a.name)
 				.appendTo(elem);
@@ -25,10 +40,13 @@ var dfm = (function ($) {
 				.attr('target', '_blank')
 				.appendTo(canvas);
 
-			img.src = a.image[4]['#text'];
+			img.src = imgUrl;
 			img.onload = function () {
 				elem.css('background-image', 'url('+img.src+')')
 					.addClass('loaded');
+			};
+			img.onerror = function () {
+				elem.destroy();
 			};
 		});
 	};
@@ -57,17 +75,28 @@ $(document).ready(function () {
 	'use strict';
 
 	var searchForm = $('#search-form'),
-		similarCanvas = $('#artists'),
+		searchInput = searchForm.find('input[type=search]'),
+		artistsCanvas = $('#artists'),
 		help = $('#help');
 
+	var artists = [
+		'Pink Floyd', 'Alborosie', 'Arctic Monkeys', 'Beastie Boys', 'Dire Straits',
+		'Gorillaz', 'Dub FX', 'Gotye', 'Gramatik', 'John Coltrane', 'Miles Davis',
+		'The Beatles', 'The Strokes', 'The Doors', 'Siriusmo', 'Elvis Presley',
+		'Bob Dylan', 'Michael Jackson', 'Led Zeppelin', 'Black Sabbath', 'Jimi Hendrix',
+		'Franz Ferdinand', 'Modeselektor'
+	];
+
+	artists = shuffleArray(artists);
+	var artistsString = artists[0] + ', ' + artists[1] + ' or ' + artists[2];
+	searchInput.attr('placeholder', artistsString);
+
 	function toggleLoading() {
-		similarCanvas.toggleClass('loading');
+		artistsCanvas.toggleClass('loading');
 	}
 
 	function hideHelp() {
-		if (!help.hasClass('hidden')) {
-			help.addClass('hidden');
-		}
+		help.addClass('hidden');
 	}
 
 	searchForm.on('submit', function (e) {
@@ -75,8 +104,9 @@ $(document).ready(function () {
 
 		hideHelp();
 		toggleLoading();
+		location.hash = this.artist.value;
 		dfm.querySimilar(this.artist.value, function (data) {
-			dfm.drawSimilar(data, similarCanvas);
+			dfm.drawSimilar(data, artistsCanvas);
 			toggleLoading();
 		});
 	});
@@ -84,13 +114,7 @@ $(document).ready(function () {
 	if (location.hash) {
 		var hashValue = location.hash.split('#')[1];
 
-		searchForm.get(0).artist.value = hashValue;
-		hideHelp();
-		toggleLoading();
-
-		dfm.querySimilar(hashValue, function (data) {
-			dfm.drawSimilar(data, similarCanvas);
-			toggleLoading();
-		});
+		searchForm.find('input[type=search]').attr('value', hashValue);
+		searchForm.submit();
 	}
 });
