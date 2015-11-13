@@ -11,7 +11,7 @@ var shuffleArray = function (array) {
 var dfm = (function ($) {
 	'use strict';
 
-	var apiURL = 'http://ws.audioscrobbler.com/2.0/',
+	var apiURL = 'https://ws.audioscrobbler.com/2.0/',
 		apiKey = 'eb6dc9b732732664bb179c33cb94ab36',
 		limit = 100;
 
